@@ -1,0 +1,76 @@
+/* main css stylings have been defined in a different file
+    shared across multiple pages.
+ */
+
+.main-content {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    background: #f2f2f2;
+    /* height: 100px; */
+    /* display: flex; */
+    padding-top: 30px;
+
+}
+
+.services_block {
+    width: 80%;
+    background: #f1f1f1;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    justify-content: center;
+}
+
+#s_title {
+    font-size: 32px;
+    font-family: Lato, Roboto;
+    font-weight: 900;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.services_container {
+    width: 100%;
+    /* background-color: orange; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* padding-left: 80px; */
+    box-sizing: border-box;
+}
+
+.block_service {
+    /* background-color: springgreen; */
+    /* display: flex; */
+    text-align: center;
+    width: 280px;
+    height: 323px;
+    margin: 30px;
+}
+
+.block_service image, span {
+    display: inline-block;
+    margin: 20px;
+}
+
+.block_service span {
+    /* font-size: 18px; */
+    font-size: 19px;
+    font-weight: 900;
+    letter-spacing: 0px;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    color: #222333;
+    margin-bottom: 5px;
+}
+
+.block_service p {
+    color: #666;
+    font-size: 15px;
+    font-family: Lato, Helvetica, Roboto;
+    letter-spacing: 0px;
+    font-weight: 600;
+    margin-top: 8px;
+}
