@@ -4,35 +4,42 @@
 	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ecofriendly cleaning service team in Austin Texas.">
 	<title>BioGreen</title>
+	<link href="styles.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-	<link href="styles.css" rel="stylesheet">
+    
+    <link href="popup.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="assets/bioGreen.png">
+	
 </head>
-<body>
+<body style="padding:0; margin:0;">
 	<div class="box-area">
 		<header>
 			<div class="wrapper">
 				<div class="logo">
                     <div class="img-name" id="logo_img"> 
-                        <img src="assets/bioGreen_logo.png" alt="logo" width="80">
+                        <a href="index.html"><img src="assets/bioGreen_logo.png" alt="logo" width="80"></a>
                     </div>
 
                     <div class="img_name" id="logo_text">
-                        BioGreen Cleaners
+                        <a style="letter-spacing: 1px;" href="index.html">BioGreen Cleaners</a>
                     </div>
 				</div>
 
 				<nav>
 					<a href="index.html">HOME</a>
-                    <a href="about.html">ABOUT</a>
+                    <a href="about.html">ABOUT US</a>
                     <a href="services.html">SERVICES</a>
-                    <a href="contact.html">CONTACT</a>
+                    <a href="contact.html">CONTACT US</a>
 				</nav>
 
                 <div id="menu_button">
@@ -46,9 +53,9 @@
 
                 <div id="myDropdown">
                     <a href="index.html">HOME</a>
-                    <a href="about.html">ABOUT</a>
+                    <a href="about.html">ABOUT US</a>
                     <a href="services.html">SERVICES</a>
-                    <a href="contact.html">CONTACT</a>
+                    <a href="contact.html">CONTACT US</a>
                 </div>
 			</div>
 		</header> <!--Done - navigation bar. -->
@@ -56,8 +63,8 @@
 		<div class="banner-area">
             <div class="two_blocks">
                 <div class="block_column">
-                    <h1>EcoFriendly cleaning service team in Austin, TX</h1>
-                    <h2>Need a proffesional cleaning team in Austin?... Just found it.</h2>
+                    <h1>We clean and you enjoy, serving in Austin and surrounding areas.</h1>
+                    <h2>need an estimate? Call us! free estimates in any of our services.</h2>
 
                     <a href="contact.html"><div class="main_button">CONTACT US</div></a>
                 </div>
@@ -69,59 +76,155 @@
 			<div class="wrapper">
 				
                 <div class="content-block">
-                    <h1>BioGreen, live green, breathe clean.</h1>
-                    <p>The cleaning team that cares about our environment & health</p>
+                    <h1>BioGreen, breathe clean, be green.</h1>
+                    <p>The company that cares about you and the environment.</p>
                 </div>
 
                 <div class="services-box">
-                    <h1>SERVICES WE OFFER:</h1>
-
+                    <h1>OUR SERVICES:</h1>
                     <div class="row">
-                        <div class="column">Residential</div>
-                        <div class="column">Commertial Cleaning</div>
-                        <div class="column">Vacation Homes</div>
-                        <div class="column">Carpet Cleaning</div>
-                        <div class="column">Upholstery</div>
-                        <div class="column">Car Seats & Carpet</div>
+                        <div class="column" onclick="togglePopup(1)">Residential Cleaning</div> <!-- ONE service name -->
+                        <div class="overlay" id="popup-1">
+                            <div class="popup">
+                                <div class="popup_content">
+                                    <div class="close_btn" onclick="closePopup(1)">&times;</div>
+                                    <h1>Residential Cleaning</h1>
+                                    <p>Let us take care of your home for you, to have a clean and peaceful place for you and your family
+                                       after a rough day. We go to your house and make sure the job is done right!.</p>
+                                    <img src="assets/residential.jpg" alt="image" width="249">
+                                </div>
+                            </div> 
+                        </div>
+                        
+
+            
+                        <div class="column" onclick="togglePopup(2)">Commertial Cleaning</div> <!-- ONE service name -->
+                        <div class="overlay" id="popup-2">
+                            <div class="popup" >
+                                <div class="popup_content">
+                                    <div class="close_btn" onclick="closePopup(2)">&times;</div>
+                                    <h1>Commertial Cleaning</h1>
+                                    <p>We are there for you and your business, to properly clean your worksite. Doesn't matter if it is an office, a larger building or any place of business,
+                                    we will be there to make sure that special place is ready for you and your business.</p>
+                                    <img src="assets/commertial.jpg" alt="image" width="249">
+                                </div>
+                            </div> 
+                        </div>
+                        
+                        
+                        
+                        <div class="column" onclick="togglePopup(3)">Vacation Homes</div> <!-- ONE service name -->
+                        <div class="overlay" id="popup-3">
+                            <div class="popup" >
+                                <div class="popup_content">
+                                    <div class="close_btn" onclick="closePopup(3)">&times;</div>
+                                    <h1>Vacation Homes</h1>
+                                    <p>We offer a vacation home service. We carry with you worries of having a perfectly clean place to make 
+                                    sure your client feels safe and comfortable to have a good time in your property.</p>
+                                    <img src="assets/vacation_homes.jpg" alt="image" width="249">
+                                </div>
+                            </div> 
+                        </div>
+
+
+
+                        <div class="column" onclick="togglePopup(4)">Carpet Cleaning</div> <!-- ONE service name -->
+                        <div class="overlay" id="popup-4">
+                            <div class="popup" >
+                                <div class="popup_content">
+                                    <div class="close_btn" onclick="closePopup(4)">&times;</div>
+                                    <h1>Carpet Cleaning</h1>
+                                    <p>You don't have to worry about doing the tedious task of cleaning and disinfecting your carpets, we are here 
+                                    to do it professionally with the right equipment, to make sure that you are going to enjoy a place with clean and good looking carpets.</p>
+                                    <img src="assets/carpet.jpg" alt="image" width="249">
+                                </div>
+                            </div> 
+                        </div>
+                        
+                        
+                        
+                        <div class="column" onclick="togglePopup(5)">Upholstery</div> <!-- ONE service name -->
+                        <div class="overlay" id="popup-5">
+                            <div class="popup" >
+                                <div class="popup_content">
+                                    <div class="close_btn" onclick="closePopup(5)">&times;</div>
+                                    <h1>Upholstery</h1>
+                                    <p>Do you have old stained upholstery? Let us bring it back to life by cleaning and disinfecting it the right way.
+                                        You will be satisfied with the results.</p>
+                                    <img src="assets/upholstery.jpg" alt="image" width="249">
+                                </div>
+                            </div> 
+                        </div>
+                        
+                        
+                        
+                        <div class="column" onclick="togglePopup(6)">Power Washing</div>  <!-- ONE service name -->
+                        <div class="overlay" id="popup-6">
+                            <div class="popup" >
+                                <div class="popup_content">
+                                    <div class="close_btn" onclick="closePopup(6)">&times;</div>
+                                    <h1>Power Washing</h1>
+                                    <p>One of the best ways to give your property an outstanding appearance is by having it 
+                                    power washed; don't let your patios and driveways look tired and old, instead let us
+                                    do the job for you with the right equipment. </p>
+                                    <img src="assets/power_washing.jpg" alt="image" width="249">
+                                </div>
+                            </div> 
+                        </div>
+                        
+                        
+                        
+                        <div class="column" onclick="togglePopup(7)">Car Service (Seats & Carpet)</div> <!-- ONE service name -->
+                        <div class="overlay" id="popup-7">
+                            <div class="popup" >
+                                <div class="popup_content">
+                                    <div class="close_btn" onclick="closePopup(7)">&times;</div>
+                                    <h1>Car Seats&Carpet</h1>
+                                    <p>We know how agitated our lives can be sometimes, and having a dirty car does not make it any better. That's why we offer to thoroughly
+                                    clean your seats and carpets to make sure you feel comfortable in your car.</p>
+                                    <img src="assets/car_seats.jpg" alt="image" width="249">
+                                </div>
+                            </div> 
+                        </div>
+                        
+                        
+                        
+                    </div>
+                </div>
+                
+                
+                <div class="services-box">
+                    <h1>SERVICE AREAS:</h1>
+                    <div class="row">
+                        <div class="column">Austin</div>
+                        <div class="column">Round Rock</div>
+                        <div class="column">Dripping Springs</div>
+                        <div class="column">Buda</div>
+                        <div class="column">Kyle</div>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="column bottom">
-                        <h2>Our Services</h2>
-                        <p>RESIDENTIAL CLEANING</p>
-                        <p>COMMERTIAL CLEANING</p>
-                        <p>VACATION HOMES</p>
-                        <p>CARPET CLEANING</p>
-                        <p>UPHOLSTERY</p>
-                        <p>CAR SEATS&CARPET</p>
-                    </div>
-    
-                    <div class="column bottom">
                         <h2>Contact Us</h2>
                         <p>PHONE <br>512-851-7186</p>
-                        <p>512-765-3596 (Spanish)</p>
                         <p>EMAIL</p>
-                        <p>bgreencleaners@gmail.com</p>
+                        <p>bgreen@biogreencleaners.com</p>
                     </div>
     
                     <div class="column bottom">
                         <h2>Working Hours</h2>
-                        <p>MONDAY-FRIDAY <br> 8:00 AM - 4:00 PM</p>
-                        <p>SATURDAY & SUNDAY<br> CLOSED</p>
+                        <p>MONDAY-SATURDAY <br> 8:00 AM - 4:00 PM</p>
+                        <p>SUNDAY<br>BY APPOINTMENT ONLY</p>
                     </div>
                 </div>
 			</div>
 
             <div class="footer_bottom">
                 <a href="https://www.facebook.com/BioGreen-Cleaners-109380451307111/"><img src="assets/FB-logo.png" alt="fb_logo" width="29"></a>
-                <a href="x"><img src="assets/insta_logo.png" alt="insta_logo" width="29"></a>
+                
             </div>
 		</div>
-
-        <footer>
-            
-        </footer>
 	</div>
     <script src="script.js"></script>
 </body>

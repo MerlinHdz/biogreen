@@ -1,0 +1,58 @@
+.overlay  {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.7);
+    z-index:1;
+    display:none;
+}
+
+
+
+.popup_content {
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0);
+    background:#fff; 
+    width:95%; 
+    max-width:500px;
+    /*height:370px;*/
+    z-index:2; 
+    text-align:center;
+    padding:20px;
+    box-sizing:border-box;
+    font-family:"Open Sans",sans-serif;
+    border-radius: 20px;
+
+    transition:all 300ms ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
+}
+
+.popup_content > div { /* used div to replace close_btn class, it wasn't being read. */
+    cursor:pointer;
+    position:absolute;
+    right:20px;
+    top:20px;
+    width:30px;
+    height:30px;
+    background-color:#222 ;
+    color:#fff;
+    font-size:25px;
+    font-weight:600;
+    line-height:30px;
+    text-align:center;
+    border-radius:50%;
+}
+
+.popup_content h1, p {
+    font-family: 'Titillium Web', 'Lato', 'arial';
+}
+
+.popup_content p {
+    color: #4D5060;
+    font-size: 18px;
+    margin-bottom: 15px;
+}

@@ -1,10 +1,12 @@
 * {
-	margin: 0;
-	padding: 0;
+    margin:0;
+    padding:0;
 }
 
-body {
+body{
 	text-align: center;
+	margin: 0px;
+	padding: 0px;
 }
 
 header {
@@ -94,6 +96,7 @@ button {
     z-index: 1;
     text-align: center;
     border-radius: 4px;
+    display: none;
 }
 
 #myDropdown a {
@@ -141,6 +144,7 @@ nav a:hover::after {
 	height: 96%;
 	position: fixed;
     top: 100px;
+    padding-top: 0;
 
 	background-image: url(assets/livingroom.jpg); 
     background-size: cover;
@@ -150,11 +154,11 @@ nav a:hover::after {
 }
 
 .banner-area h2 {
-	padding-top: 6%;
-	font-size: 60px;
+	padding-top: 4%;
+	/*font-size: 60px;*/
 	font-family: poppins;
 	text-transform: uppercase;
-	color: #fff;
+	/*color: #fff;*/
 }
 
 .two_blocks {
@@ -163,9 +167,9 @@ nav a:hover::after {
     display: table;
     clear: both;
     position: absolute;
-    bottom: 0;
+    top: 20px;
     left: 10%;
-    margin-bottom: 100px;
+    /*margin-bottom: 100px;*/
 }
 
 .block_column {
@@ -267,7 +271,6 @@ nav a:hover::after {
 .row {
     width: 80%;
     height: auto;
-
     margin-top: 15px;
     margin-bottom: 40px;
     margin-left: auto;
@@ -277,6 +280,9 @@ nav a:hover::after {
     justify-content: center;
     
    }
+   
+
+
 
 .column {
     font-family: 'Source Sans Pro';
@@ -288,6 +294,7 @@ nav a:hover::after {
     color: #750407;
     /* TEST */
     display: inline-block;
+    cursor: pointer;
    
 }
 
@@ -352,7 +359,7 @@ nav a:hover::after {
         height: 40%;
         display: flex;
         position: absolute;
-        top: 10%;
+        top: 30px;
     }
     
     .block_column {
